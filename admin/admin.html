@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel | 7s IQ Institute</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="admin-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li data-section="dashboard" class="active">Dashboard</li>
+      <li data-section="courses">Courses</li>
+      <li data-section="gallery">Gallery</li>
+      <li data-section="testimonials">Testimonials</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <div class="topbar">
+      <button id="toggleBtn">☰</button>
+      <h3 id="sectionTitle">Dashboard</h3>
+    </div>
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="panel-section active">
+      <p>Welcome to Admin Dashboard</p>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="panel-section">
+      <h4>Courses</h4>
+      <div id="admin-course-list"></div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="panel-section">
+      <h4>Gallery</h4>
+      <div id="admin-gallery-list"></div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="panel-section">
+      <h4>Testimonials</h4>
+      <div id="admin-testimonial-list"></div>
+    </section>
+
+  </main>
+</div>
+<!-- ADMIN MODAL -->
+<div id="adminModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="modal-close" id="closeModal">&times;</span>
+    <h4 id="modalTitle"></h4>
+    <pre id="modalContent"></pre>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+
+
+</html>

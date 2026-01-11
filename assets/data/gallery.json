@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Classroom Training",
+    "image": "assets/images/gallery1.jpg"
+  },
+  {
+    "title": "Student Projects",
+    "image": "assets/images/gallery2.jpg"
+  },
+  {
+    "title": "Workshop Session",
+    "image": "assets/images/gallery3.jpg"
+  },
+  {
+    "title": "Internship Program",
+    "image": "assets/images/gallery4.jpg"
+  },
+  {
+    "title": "Certification Ceremony",
+    "image": "assets/images/gallery5.jpg"
+  },
+  {
+    "title": "Lab Practice",
+    "image": "assets/images/gallery6.jpg"
+  }
+]

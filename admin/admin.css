@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #0a8f4d;
+  color: #fff;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar h2 {
+  margin-bottom: 25px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.sidebar li:hover,
+.sidebar li.active {
+  background: rgba(255,255,255,0.2);
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#toggleBtn {
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.panel-section {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.panel-section.active {
+  display: block;
+}
+
+/* DASHBOARD CARDS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* LISTS */
+.panel-section ul {
+  margin-top: 15px;
+}
+
+.panel-section li {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 100;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.admin-card {
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+/* ADMIN ACTION BUTTONS */
+.admin-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-view {
+  background-color: #0a8f4d;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-view:hover {
+  background-color: #087a41;
+}
+
+.btn-delete {
+  background-color: #dc2626;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+/* MODAL OVERLAY */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-overlay.show {
+  display: flex;
+}
+
+/* MODAL BOX */
+.modal-box {
+  background: #ffffff;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-box h4 {
+  margin-bottom: 15px;
+  color: #0a8f4d;
+}
+
+.modal-box pre {
+  white-space: pre-wrap;
+  font-size: 14px;
+  color: #333;
+}
+
+/* CLOSE BUTTON */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+

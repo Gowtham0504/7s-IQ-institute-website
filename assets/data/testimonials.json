@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Nathiya",
+    "feedback": "The Web Development course was very useful. Trainers explained concepts clearly with practical examples.",
+    "course": "Web Development",
+    "rating": 5
+  },
+  {
+    "name": "Gowtham",
+    "feedback": "Python Full Stack training helped me understand both frontend and backend development confidently.",
+    "course": "Python Full Stack Development",
+    "rating": 5
+  },
+  {
+    "name": "Deva",
+    "feedback": "Java Full Stack course provided strong fundamentals and real-time project experience.",
+    "course": "Java Full Stack Development",
+    "rating": 5
+  },
+  {
+    "name": "Pugal ",
+    "feedback": "Basic Computers course improved my computer knowledge and confidence for office work.",
+    "course": "Basic Computers",
+    "rating": 5
+  },
+  {
+    "name": "Ukesh ",
+    "feedback": "MERN Stack training was well structured and focused on modern industry requirements.",
+    "course": "MERN Stack",
+    "rating": 5
+  },
+  {
+    "name": "Kathir ",
+    "feedback": "Digital Marketing course helped me understand SEO and social media marketing practically.",
+    "course": "Digital Marketing",
+    "rating": 5
+  },
+  {
+    "name": "Karthik ",
+    "feedback": "Only Python course was beginner-friendly and helped me build strong programming basics.",
+    "course": "Only Python",
+    "rating": 5
+  },
+  {
+    "name": "Meena ",
+    "feedback": "Basic Java training improved my logical thinking and prepared me for advanced concepts.",
+    "course": "Basic Java",
+    "rating": 5
+  },
+  {
+    "name": "Vijay ",
+    "feedback": "ML/DL course gave me a clear understanding of machine learning concepts with examples.",
+    "course": "ML / DL",
+    "rating": 5
+  }
+]

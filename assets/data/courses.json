@@ -1,0 +1,238 @@
+[
+  {
+    "id": "web-dev",
+    "name": "Web Development",
+    "duration": "4–6 Months",
+    "fees": "₹25,000 + 18% GST",
+    "description": "HTML, CSS, JavaScript, Bootstrap",
+    "image": "assets/images/web-development.jpg",
+     "advantages": [
+      "High demand in IT industry",
+      "Suitable for beginners",
+      "Creative career options",
+      "Freelancing opportunities"
+    ],
+    "curriculum": [
+      "HTML Basics",
+      "CSS Styling",
+      "Responsive Design",
+      "JavaScript Fundamentals",
+      "Bootstrap Framework",
+      "Mini Project"
+    ]
+  },
+  {
+    "id": "python-fst",
+    "name": "Python Full Stack Development",
+    "duration": "4–6 Months",
+    "fees": "₹35,000 + 18% GST",
+    "description": "Frontend + Backend Python",
+   "image": "assets/images/Python Full Stack Development.jpg",
+    "advantages": [
+      "Strong backend skills",
+      "High demand language",
+      "Easy to learn",
+      "Used in multiple domains"
+    ],
+    "curriculum": [
+      "Python Basics",
+      "OOP Concepts",
+      "Django Framework",
+      "HTML & CSS",
+      "MySQL Database",
+      "Full Stack Project"
+    ]
+  },
+  {
+    "id": "java-fst",
+    "name": "Java Full Stack Development",
+    "duration": "4–6 Months",
+    "fees": "₹35,000 + 18% GST",
+    "description": "Frontend + Backend Java",
+     "image": "assets/images/Java Full Stack Development.jpg",
+    "advantages": [
+      "Enterprise-level development",
+      "Strong OOP foundation",
+      "High salary potential",
+      "Used in corporate projects"
+    ],
+    "curriculum": [
+      "Core Java",
+      "OOP Concepts",
+      "JDBC",
+      "Spring Framework",
+      "Hibernate",
+      "Full Stack Project"
+    ]
+  },
+  {
+    "id": "basic-computers",
+    "name": "Basic Computers",
+    "duration": "3 Months",
+    "fees": "₹11,000 + 18% GST",
+    "description": "Computer fundamentals",
+     "image": "assets/images/Basic Computers.jpg",
+     "advantages": [
+      "Ideal for beginners",
+      "Improves computer skills",
+      "Useful for office jobs",
+      "Enhances productivity"
+    ],
+    "curriculum": [
+      "Computer Fundamentals",
+      "MS Word",
+      "MS Excel",
+      "MS PowerPoint",
+      "Internet & Email"
+    ]
+  },
+  {
+    "id": "mern",
+    "name": "MERN Stack",
+    "duration": "4–6 Months",
+    "fees": "₹20,000 + 18% GST",
+    "description": "MongoDB, Express, React, Node",
+     "image": "assets/images/MERN Stack.jpg",
+    "advantages": [
+      "Modern web development",
+      "High industry demand",
+      "Full stack JavaScript",
+      "Startup-friendly stack"
+    ],
+    "curriculum": [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "REST APIs",
+      "Full Stack Project"
+    ]
+  },
+  {
+    "id": "digital-marketing",
+    "name": "Digital Marketing",
+    "duration": "4–6 Months",
+    "fees": "₹25,000 + 18% GST",
+    "description": "SEO, SEM, SMM",
+     "image": "assets/images/Digital Marketing.jpg",
+    "advantages": [
+      "Work from anywhere",
+      "Freelancing opportunities",
+      "High business demand",
+      "Suitable for all backgrounds"
+    ],
+    "curriculum": [
+      "Digital Marketing Basics",
+      "SEO",
+      "Social Media Marketing",
+      "Google Ads",
+      "Content Marketing",
+      "Live Campaigns"
+    ]
+  },
+  {
+    "id": "only-python",
+    "name": "Only Python",
+    "duration": "4–6 Months",
+    "fees": "₹25,000 + 18% GST",
+    "description": "Core Python Programming",
+     "image": "assets/images/Only Python.jpg",
+    "advantages": [
+      "Beginner-friendly",
+      "Automation support",
+      "Strong programming base",
+      "Used in multiple fields"
+    ],
+    "curriculum": [
+      "Python Basics",
+      "Data Types",
+      "Loops",
+      "Functions",
+      "OOP Concepts"
+    ]
+  },
+  {
+    "id": "only-java",
+    "name": "Only Java",
+    "duration": "4–6 Months",
+    "fees": "₹25,000 + 18% GST",
+    "description": "Core Java Programming",
+     "image": "assets/images/Only Java.jpg",
+        "advantages": [
+      "Strong programming foundation",
+      "Enterprise usage",
+      "Object-oriented skills",
+      "Career growth opportunities"
+    ],
+    "curriculum": [
+      "Java Basics",
+      "OOP Concepts",
+      "Exception Handling",
+      "Collections",
+      "File Handling"
+    ]
+  },
+  {
+    "id": "basic-python",
+    "name": "Basic Python",
+    "duration": "3 Months",
+    "fees": "₹8,000 + 18% GST",
+    "description": "Python basics",
+     "image": "assets/images/Basic Python.jpg",
+     "advantages": [
+      "Easy introduction to coding",
+      "Improves logical thinking",
+      "Suitable for students",
+      "Foundation for advanced Python"
+    ],
+    "curriculum": [
+      "Python Introduction",
+      "Variables",
+      "Conditional Statements",
+      "Loops",
+      "Functions"
+    ]
+  },
+  {
+    "id": "basic-java",
+    "name": "Basic Java",
+    "duration": "3 Months",
+    "fees": "₹8,000 + 18% GST",
+    "description": "Java basics",
+     "image": "assets/images/Basic Java.jpg",
+    "advantages": [
+      "Beginner-friendly",
+      "Strong logical foundation",
+      "Prepares for advanced Java",
+      "Suitable for freshers"
+    ],
+    "curriculum": [
+      "Java Introduction",
+      "Data Types",
+      "Control Statements",
+      "OOP Basics",
+      "Simple Programs"
+    ]
+  },
+  {
+    "id": "ml-dl",
+    "name": "ML / DL",
+    "duration": "4–6 Months",
+    "fees": "₹10,000 + 18% GST",
+    "description": "Machine & Deep Learning",
+     "image": "assets/images/ML&DL.jpg",
+    "advantages": [
+      "Future-oriented technology",
+      "High industry demand",
+      "Used in AI and data science",
+      "Career growth opportunities"
+    ],
+    "curriculum": [
+      "Python for ML",
+      "Machine Learning Basics",
+      "Supervised Learning",
+      "Neural Networks",
+      "Deep Learning Introduction"
+    ]
+  }
+]
