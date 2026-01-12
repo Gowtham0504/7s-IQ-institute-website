@@ -723,3 +723,61 @@ footer {
   color: #444;
   line-height: 1.6;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* =============================
+   MOBILE RESPONSIVE FIXES
+============================= */
+@media (max-width: 768px) {
+
+  /* HERO SECTION */
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  /* BUTTONS */
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* COURSE CARDS */
+  .course-card {
+    margin-bottom: 20px;
+  }
+
+  /* STATS */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* TESTIMONIALS */
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  /* ADMIN BUTTON GROUP */
+  .course-action-buttons {
+    flex-direction: column;
+  }
+
+  /* GALLERY IMAGES */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
