@@ -1,53 +1,65 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".choose-card");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          cards.forEach((card, index) => {
-            setTimeout(() => {
-              card.classList.add("show");
-            }, index * 150); // stagger animation
-          });
-          observer.disconnect();
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
+  /* ===============================
+     WHY CHOOSE US ANIMATION
+  ================================ */
+  const chooseCards = document.querySelectorAll(".choose-card");
+  const whySection = document.querySelector(".why-choose-us");
 
-  const section = document.getElementById("whyChoose");
-  if (section) observer.observe(section);
-});
-const counters = document.querySelectorAll(".counter");
-
-const counterObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const counter = entry.target;
-        const target = +counter.getAttribute("data-target");
-        let count = 0;
-
-        const updateCounter = () => {
-          const increment = target / 100;
-
-          if (count < target) {
-            count += increment;
-            counter.innerText = Math.ceil(count);
-            setTimeout(updateCounter, 20);
-          } else {
-            counter.innerText = target;
+  if (chooseCards.length && whySection) {
+    const chooseObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            chooseCards.forEach((card, index) => {
+              setTimeout(() => {
+                card.classList.add("show");
+              }, index * 150);
+            });
+            observer.unobserve(whySection);
           }
-        };
+        });
+      },
+      { threshold: 0.2 }
+    );
 
-        updateCounter();
-        counterObserver.unobserve(counter);
-      }
-    });
-  },
-  { threshold: 0.5 }
-);
+    chooseObserver.observe(whySection);
+  }
 
-counters.forEach(counter => counterObserver.observe(counter));
+  /* ===============================
+     STATS COUNTER ANIMATION
+  ================================ */
+  const counters = document.querySelectorAll(".counter");
+
+  if (counters.length) {
+    const counterObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = Number(counter.dataset.target);
+            let count = 0;
+            const increment = target / 100;
+
+            const updateCounter = () => {
+              if (count < target) {
+                count += increment;
+                counter.innerText = Math.ceil(count);
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.innerText = target;
+              }
+            };
+
+            updateCounter();
+            counterObserver.unobserve(counter);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    counters.forEach(counter => counterObserver.observe(counter));
+  }
+
+});

@@ -1,3 +1,23 @@
+/* ===== GLOBAL RESPONSIVE SAFETY ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ===============================
    GLOBAL RESET & BASE STYLES
 ================================ */
@@ -284,61 +304,44 @@ footer {
   margin-top: auto;
   padding-bottom: 20px;
 }
-/* ===== HERO SECTION (7SIQ STYLE) ===== */
-
-.hero {
+/* =============================
+   HERO SECTION (FIXED)
+============================= */
+.hero-section {
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+  width: 100%;
+  background: linear-gradient(
+      rgba(0,0,0,0.65),
+      rgba(0,0,0,0.65)
+    ),
     url("../images/hero-bg.jpg") center/cover no-repeat;
 
   display: flex;
-  align-items: flex-start;     /* 👈 move content to top */
+  align-items: center;
   justify-content: center;
-
-  padding-top: 120px;          /* 👈 space from top */
-  text-align: center;
-  color: #ffffff;
+  padding: 60px 15px;
 }
 
-
-/* Dark overlay */
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.85)
-  );
-}
-
-/* Content above overlay */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  color: #ffffff;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
+.hero-section h1 {
+  color: #fff;
+  font-size: 42px;
   font-weight: 700;
 }
 
-.hero-content p {
-  font-size: 1.1rem;
-  color: #dcdcdc;
+.hero-section p {
+  color: #ddd;
+  font-size: 18px;
 }
 
-/* Button tweaks */
-.hero-content .btn-success {
-  background-color: #0a8f4d;
-  border: none;
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
-.hero-content .btn-outline-light:hover {
-  background-color: #0a8f4d;
-  border-color: #0a8f4d;
-}
+
 .btn-testimonial {
   background-color: #facc15;   /* yellow/gold */
   color: #000;
@@ -780,4 +783,34 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+.hero-section h1,
+.hero-section p,
+.hero-buttons {
+  animation: heroFade 1s ease forwards;
+  opacity: 0;
+}
+
+.hero-section h1 { animation-delay: 0.2s; }
+.hero-section p:nth-of-type(1) { animation-delay: 0.4s; }
+.hero-section p:nth-of-type(2) { animation-delay: 0.6s; }
+.hero-buttons { animation-delay: 0.8s; }
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-buttons .btn {
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
